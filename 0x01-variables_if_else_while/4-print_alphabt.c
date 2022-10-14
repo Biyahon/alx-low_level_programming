@@ -7,10 +7,16 @@
 
 int main(void)
 {
-	int a;
+	char c;
 
-	for (a = 0; a < 10; a++)
-		printf("%d", a);
-	putchar('\n');
+	c = 'a';
+	while
+		(c <= 'z') {
+		       if (( c != 'q' && c != 'e') && c <= 'z')
+			       putchar(c);
+		       c++;
+		}
+ 	putchar('\n');
 	return (0);
 }
+
