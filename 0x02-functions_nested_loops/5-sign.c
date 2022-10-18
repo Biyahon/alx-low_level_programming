@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * print_sign - print the sign of a sum
- * @n: the num to be checked for
- * Return 1 and prints + if n is greater than zero
- * 0 and print 0 if n is zero
- * -1 and prints - if n is less than zero
+ * print_sign - print the sign of a number
+ * @n: int thatwill use for the argument of the function
+ * Return: 0
  */
 
 int print_sign(int n)
