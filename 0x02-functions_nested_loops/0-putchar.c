@@ -1,7 +1,7 @@
 #include "main.h"
-
 /**
  * main - print _putchar
+ * Written by Biya
  * Return: 0
  */
 int main(void)
