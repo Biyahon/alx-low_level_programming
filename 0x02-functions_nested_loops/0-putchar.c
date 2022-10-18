@@ -2,6 +2,7 @@
 
 /**
  * main - printer putchar
+ * is written by Biya
  * Return: 0 always
  */
 int main(void)
