@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  * _strlen -> functon to get the length of a string
  * @s: string pointer to passed to this function
