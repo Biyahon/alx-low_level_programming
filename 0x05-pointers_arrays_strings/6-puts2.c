@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * puts2 - prints characters;
  * @str: string character
