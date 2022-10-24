@@ -1,17 +1,23 @@
 #include "main.h"
 
 /**
- * puts2 - prints characters;
- * @str: string character
+ * puts2 - skips 2
+ * @str: string
  */
 void puts2(char *str)
 {
-	int index = 0, len = 0;
+	int i;
 
-	while (str[index++])
-		len++;
+	i = 0;
 
-	for (index = 0; index < len; index += 2)
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+			_putchar(str[i]);
 
-		_putchar ('\n');
+		i++;
+	}
+
+	_putchar('\n');
 }
+
