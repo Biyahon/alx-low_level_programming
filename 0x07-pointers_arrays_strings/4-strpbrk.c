@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strpbrk - locate the first occurence in s if any bytes in accept
+ * _strpbrk - located the first occurence in s if any bytes in accept
  * @s: the string we look for occerence in
- * @acccept: the print we compare against
+ * @accept: the print we compare against
  * Return: a pointer to the byte or NULL
  */
 char *_strpbrk(char *s, char *accept)
