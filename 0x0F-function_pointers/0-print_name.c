@@ -3,8 +3,8 @@
 
 /**
  * print_name - prints a name.
- * @name: input name.
- * @f: function pointer
+ * @name: input to name.
+ * @f: pointer to function pointer
  */
 void print_name(char *name, void (*f)(char *))
 {
