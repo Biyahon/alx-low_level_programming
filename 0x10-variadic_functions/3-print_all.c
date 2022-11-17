@@ -4,51 +4,51 @@
 #include <stdlib.h>
 
 /**
- * print_all - prints anything
- * @format: the format we print in
+ * print_all - function that prints anything
+ * @format: a list of types of arguments
+ *	passed to the function
+ *
  * Return: void
  */
+
 void print_all(const char * const format, ...)
 {
-	va_list ptr;
-	char *string;
-	unsigned int i = 0;
-	unsigned int flag;
+	unsigned int i;
+	va_list args;
+	char *s, *separator;
 
-	while (format)
+	va_start(args, format);
+
+	separator = "";
+
+	i = 0;
+	while (format && format[i])
 	{
-		va_start(ptr, format);
-		while (format[i])
+		switch (format[i])
 		{
-			flag = 1;
-			switch (format[i])
-
-			{
 			case 'c':
-				printf("%c", va_arg(ptr, int));
+				printf("%s%c", separator, va_arg(args, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(ptr, int));
+				printf("%s%d", separator, va_arg(args, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(ptr, double));
+				printf("%s%f", separator, va_arg(args, double));
 				break;
 			case 's':
-				string = va_arg(ptr, char *);
-				if (!string)
-					string = "(nil)";
-				printf("%s", string);
+				s = va_arg(args, char *);
+				if (s == NULL)
+					s = "(nil)";
+				printf("%s%s", separator, s);
 				break;
 			default:
-				flag = 0;
-				break;
-			}
-		if (format[i + 1] && flag)
-			printf(", ");
-		i++;
+				i++;
+				continue;
 		}
-		va_end(ptr);
-		break;
+		separator = ", ";
+		i++;
 	}
+
 	printf("\n");
+	va_end(args);
 }
