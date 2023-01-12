@@ -1,1 +1,1 @@
-doubly_linked_lists comp tasks
+doubly_linked_lists complet tasks
