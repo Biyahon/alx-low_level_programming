@@ -1,1 +1,1 @@
-doubly_linked_lists all tasks.
+doubly_linked_lists all tasks
